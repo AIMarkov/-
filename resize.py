@@ -1,3 +1,4 @@
+#图像预处理
 from PIL import Image
 import os
 import re
@@ -23,7 +24,7 @@ for Id in filelist:
     filepath=path+Id
     im=Image.open(filepath)
     imresize=im.resize((256,256))
-    imresize=imresize.convert('L')
+    imresize=imresize.convert('L')#若不想用彩色的，则可以直接把这句删除
     #imresize.show()
     #print(Sfilepath)
     #subSfilepath=re.sub('JPG',"jpg",Sfilepath)
