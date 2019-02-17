@@ -1,5 +1,5 @@
 # *_* coding:utf-8 *_*
-
+#可以直接使用3通道彩色
 import tensorflow as tf
 import random
 import os
